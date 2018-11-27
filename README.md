@@ -7,3 +7,10 @@ Try this in the .htaccess of the external root folder :
     Header set Access-Control-Allow-Origin "*"
 </IfModule>
 
+if There only concerns .js scripts you can wrap the above code inside this:
+
+<FilesMatch "\.(js)$">
+...
+</FilesMatch>
+
+
